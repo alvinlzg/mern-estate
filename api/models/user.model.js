@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    avatar: {
+        type: String,
+        default: "https://chubbyduffy.com/wp-content/uploads/2021/06/chubby-duffy.png"
+    },
 }, {
     timestamps: true
 });
